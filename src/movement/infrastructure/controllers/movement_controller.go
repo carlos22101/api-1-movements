@@ -3,8 +3,8 @@ package controllers
 import (
 	"encoding/json"
 	"net/http"
-	"recibe/src/applications"
-	"recibe/src/domain/entities"
+	"recibe/src/movement/applications"
+	"recibe/src/movement/domain/entities"
 )
 
 type MovementController struct {

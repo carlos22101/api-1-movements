@@ -3,9 +3,9 @@ package routes
 import (
     "database/sql"
     "net/http"
-    "recibe/src/applications"
-    "recibe/src/infrastructure/controllers"
-    "recibe/src/infrastructure/repositories"
+    "recibe/src/movement/applications"
+    "recibe/src/movement/infrastructure/controllers"
+    "recibe/src/movement/infrastructure/repositories"
 
     amqp "github.com/rabbitmq/amqp091-go"
     "github.com/gorilla/mux"

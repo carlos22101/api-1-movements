@@ -8,7 +8,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv" // Para cargar .env (go get github.com/joho/godotenv)
 	"recibe/src/core"
-	"recibe/src/infrastructure/routes"
+	"recibe/src/movement/infrastructure/routes"
 )
 
 func main() {

@@ -2,8 +2,8 @@ package repositories
 
 import (
     "database/sql"
-    "recibe/src/domain/entities"
-    "recibe/src/domain/repositories"
+    "recibe/src/movement/domain/entities"
+    "recibe/src/movement/domain/repositories"
 )
 
 type MovementMySQLRepo struct {

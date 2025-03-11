@@ -3,8 +3,8 @@ package applications
 import (
 	"encoding/json"
 	"os"
-	"recibe/src/domain/entities"
-	"recibe/src/domain/repositories"
+	"recibe/src/movement/domain/entities"
+	"recibe/src/movement/domain/repositories"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 )

@@ -22,7 +22,7 @@ func ConnectRabbit() (*amqp.Channel, error) {
 	if err != nil {
 		return nil, err
 	}
-	// Declarar cola (asegurarnos que exista)
+	
 	queueName := os.Getenv("RABBITMQ_QUEUE")
 	_, err = ch.QueueDeclare(
 		queueName, // name

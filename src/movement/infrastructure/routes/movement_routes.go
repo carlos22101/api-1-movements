@@ -6,7 +6,7 @@ import (
     "recibe/src/movement/applications"
     "recibe/src/movement/infrastructure/controllers"
     "recibe/src/movement/infrastructure/repositories"
-    "recibe/src/movement/infrastructure/queue" 
+    "recibe/src/services/rabbitmq/infrastructure"
 
     amqp "github.com/rabbitmq/amqp091-go"
     "github.com/gorilla/mux"
@@ -16,7 +16,7 @@ func SetupMovementRoutes(router *mux.Router, db *sql.DB, rabbitChan *amqp.Channe
     movRepo := repositories.NewMovementMySQLRepo(db)
 
    
-    rabbitPublisher := queue.NewRabbitMQPublisher(rabbitChan)
+    rabbitPublisher := infrastructure.NewRabbitMQPublisher(rabbitChan)
 
     
     movUseCase := applications.NewMovementUseCase(movRepo, rabbitPublisher)

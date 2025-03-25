@@ -1,4 +1,4 @@
-package queue
+package infrastructure
 
 import (
     "encoding/json"
@@ -6,7 +6,6 @@ import (
 
     amqp "github.com/rabbitmq/amqp091-go"
 )
-
 
 type RabbitMQPublisher struct {
     Channel *amqp.Channel
